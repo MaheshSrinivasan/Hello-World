@@ -1,0 +1,176 @@
+ Comments -/* */
+
+
+Library Name is 1 to 8 characters longs
+DATA step Name is 1 to 32 Characters long
+
+
+Run - Select the code & Press F3
+
+DATA Step - Create / Manipulate Data
+PROC Step - Generate Reports
+
+Each Step ends with Run Statement
+Each Statement ends with ;
+
+Default Library is WORK.
+
+There are two library - Temporary and Permanent Library
+
+Library One Way Referencing & Two Way Referencing
+
+Day1.Mahesh - One Way Referencing
+
+
+Work.Mahesh
+Mahesh - TwoWay Referencing
+
+
+Rows - Observations
+Columns - Variables
+
+Values in the Cell are Case Sensitive
+
+
+Input is the statement is uesed to declare the variables.
+
+$ indicates the Character Variables
+Datalines or Cards statement is used to declare observations
+
+Informat is used to read the data with special characters.
+Format is the statement which displays the data with special characters.
+Label is used for the description
+Rename is used to Change the name of the variable
+
+
+Data Day1.Mahesh;
+length City $10.;
+input City $ ID $ Age;
+datalines;
+
+
+PROC Step 
+1.PROC CONTENTS
+2.PROC PRINT
+
+
+
+Bangalore T101 24
+Pune T102 29
+;
+run;
+
+
+
+************************************Day 2*********************************
+
+Restrictions 
+1.Observations
+2.Variables
+
+
+Restrictions over observations can be used only with SET statement in DATA Step
+
+Homework - How SET statement can be used in PROC Step
+
+
+Restrictions over variables i.e keep and Drop can be used with SET statement, DATA statement as an option. It can also be used as statement itself.
+
+Homework Use Keep and Drop in PROC step
+
+
+
+********Conditional Statement
+
+Where 
+If
+When
+
+Homework - WHERE Statements in PROC
+
+*********Splitting of Dataset
+
+
+******Logical Operator
+
+Contains Operator
+
+
+*****************************************Day 3*********************************
+
+
+SORT 
+
+PROC FREQ produces one way frequency tables or contingency tables
+
+To generate cross tablation we use * between variables
+
+IMPORT/EXPORT
+
+
+EXPORT - Export SAS dataset into EXCEL,CSV and Text
+
+
+Xls ---Xls else use (tab)
+CSV ----CSV
+txt----tab else use (dlm)
+
+
+IMPORT  --
+
+ 
+Day 4*******************
+
+PROC MEANS - Freq Mean StdDev, Min, Max
+
+PROC SUMMARY - No of observations
+
+PROC SUMMARY need a PRINT keyword or Output OUt Statement. You need to specify the variables as well as the 
+statistic you want to calculate
+
+PROC TABULATE -- VAR and TABLES Statement
+
+PROC UNIVARIATE which gives a all sort of statistics
+
+Using UNiVARIATE we can make Histogram
+
+PPPlot & QQPLot
+
+
+Day5*******************************************
+
+SAS Functions -- SAS functions are used for Data Manipulation. SAS functions are used only in DATA STEP
+
+1. DATE 2.Character/Text 3. Numeric
+
+
+SCAN function is used to break the string on the basis delimiter
+
+
+
+Numeric Functions:
+
+
+Input is the function used to change charcater type variable to Numeric variable.
+Put is the function used to change Numeric to character variable.
+ 
+
+Day 6********************************
+
+PROC REPORT
+
+Use Column statement to select the variable
+
+
+Day 7***************************************
+
+Uniform width
+Fixed width
+
+Day 8************************************
+
+PROC SQL ends with quit.
+
+
+How to create a dataset in Proc SQL
+
